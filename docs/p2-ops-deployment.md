@@ -1,0 +1,81 @@
+# 部署与基础设施 (P2)
+
+- 部署模型
+  - [❌] [本地部署](./ops/deployment/models/on-premises.md) - 在用户自有数据中心部署系统的方案，提供最大的数据控制和自定义能力，确保数据主权和安全控制
+    - [❌] [硬件规格建议](./ops/deployment/models/on-premises/hardware.md) - 针对不同规模和性能需求提供的硬件配置建议，确保系统运行最优
+    - [❌] [操作系统支持](./ops/deployment/models/on-premises/os.md) - 支持的操作系统类型和版本信息，明确部署环境兼容性
+    - [❌] [网络架构设计](./ops/deployment/models/on-premises/network.md) - 推荐的本地部署网络架构方案，优化系统组件通信性能和安全性
+    - [❌] [存储系统配置](./ops/deployment/models/on-premises/storage.md) - 数据存储系统的配置指南，满足性能、容量和可靠性需求
+  - [❌] [私有云部署](./ops/deployment/models/private-cloud.md) - 在专用云环境中部署系统的方案，平衡控制与弹性需求，提供更灵活的资源分配和管理
+  - [❌] [混合云模型](./ops/deployment/models/hybrid.md) - 结合本地和云端资源的部署模式，优化性能、成本和灵活性，实现资源与性能的最优平衡
+    - [❌] [工作负载分配策略](./ops/deployment/models/hybrid/workload.md) - 决定哪些系统组件部署在本地和云端的策略，优化整体架构
+    - [❌] [数据同步机制](./ops/deployment/models/hybrid/sync.md) - 确保分布在不同环境的系统组件间数据一致性的机制，维护系统完整性
+    - [❌] [混合网络架构](./ops/deployment/models/hybrid/network.md) - 连接本地环境和云服务的网络架构，确保安全高效的通信
+    - [❌] [统一管理工具](./ops/deployment/models/hybrid/management.md) - 集中管理混合云环境中所有组件的工具，简化运维复杂性
+  - [❌] [多区域部署](./ops/deployment/models/multi-region.md) - 跨多个地理区域部署系统的架构，提供低延迟访问和灾备能力，支持全球业务和本地化服务
+  - [❌] [边缘计算集成](./ops/deployment/models/edge.md) - 将处理能力扩展到网络边缘的部署策略，最小化延迟和带宽使用，提升用户体验和实时分析能力
+  - [❌] [容器化部署](./ops/deployment/models/containerized.md) - 基于容器技术的系统部署模式，提供一致的运行环境和简化的扩展管理，增强部署敏捷性和可移植性
+
+- 基础设施即代码
+  - [❌] [环境定义模板](./ops/iac/templates.md) - 用代码定义系统运行环境的模板，确保环境配置的一致性和可重复性，减少手动配置错误
+    - [❌] [多云环境支持](./ops/iac/templates/multi-cloud.md) - 支持不同云服务提供商的模板系统，实现云平台间的可移植性
+    - [❌] [版本控制集成](./ops/iac/templates/version-control.md) - 与代码版本控制系统的集成，跟踪和管理环境配置变更
+    - [❌] [参数化配置](./ops/iac/templates/parameterization.md) - 通过参数化模板支持不同部署场景的功能，增强环境定义的灵活性
+    - [❌] [模板验证工具](./ops/iac/templates/validation.md) - 在应用前验证环境定义有效性的工具，防止配置错误导致的问题
+  - [❌] [自动化部署流程](./ops/iac/automation.md) - 自动执行系统部署和更新的流程，减少手动操作和人为错误，加速部署周期和提高可靠性
+  - [❌] [配置管理系统](./ops/iac/configuration.md) - 管理系统配置的工具，确保配置项的一致性和变更的可追踪性，提供集中化的配置控制
+    - [❌] [配置分发机制](./ops/iac/configuration/distribution.md) - 将配置安全分发到各系统组件的机制，确保配置更新的可靠传递
+    - [❌] [配置合规检查](./ops/iac/configuration/compliance.md) - 验证系统配置符合安全和性能基准的功能，维护系统质量标准
+    - [❌] [配置历史跟踪](./ops/iac/configuration/history.md) - 记录配置变更历史的功能，支持审计和问题排查
+    - [❌] [环境特定配置](./ops/iac/configuration/environments.md) - 管理不同环境(开发、测试、生产)特定配置的机制，维护环境隔离
+  - [❌] [基础设施监控](./ops/iac/monitoring.md) - 监控基础设施状态和性能的工具，提供系统资源使用的可视性，支持性能优化和问题发现
+  - [❌] [安全基线管理](./ops/iac/security-baseline.md) - 定义和强制执行基础设施安全标准的系统，确保部署符合安全最佳实践，防范安全漏洞和风险
+  - [❌] [灾难恢复自动化](./ops/iac/disaster-recovery.md) - 自动化灾难恢复流程的工具，减少恢复时间并提高恢复可靠性，确保业务连续性和数据安全
+
+- 性能优化
+  - [❌] [硬件加速](./ops/performance/hardware-acceleration.md) - 利用专用硬件加速关键计算过程的技术，大幅提升系统性能，支持高频交易和复杂计算需求
+    - [❌] [FPGA集成](./ops/performance/hardware-acceleration/fpga.md) - 利用现场可编程门阵列加速特定算法的解决方案，实现微秒级处理速度
+    - [❌] [GPU计算支持](./ops/performance/hardware-acceleration/gpu.md) - 利用图形处理器并行计算能力的功能，加速数据密集型运算
+    - [❌] [专用网络硬件](./ops/performance/hardware-acceleration/network.md) - 使用专门优化的网络接口和交换设备，最小化通信延迟和抖动
+    - [❌] [内存优化技术](./ops/performance/hardware-acceleration/memory.md) - 高性能内存配置和优化策略，减少数据访问延迟和提高吞吐量
+  - [❌] [数据库调优](./ops/performance/database.md) - 优化数据库配置和查询性能的技术，提高数据访问效率和系统响应速度，支持高并发访问和实时查询
+  - [❌] [网络优化](./ops/performance/network.md) - 优化系统网络配置和拓扑的技术，减少网络延迟和提高通信效率，确保数据传输的可靠性和速度
+    - [❌] [低延迟网络配置](./ops/performance/network/low-latency.md) - 特别针对高频交易优化的网络设置，最小化数据传输时间
+    - [❌] [流量优先级控制](./ops/performance/network/priority.md) - 实施网络流量优先级机制的功能，确保关键数据传输不受影响
+    - [❌] [带宽管理](./ops/performance/network/bandwidth.md) - 优化带宽使用并防止拥塞的技术，确保网络资源有效分配
+    - [❌] [路由优化](./ops/performance/network/routing.md) - 选择最优网络路径的策略，减少传输跳数和延迟
+  - [❌] [缓存策略](./ops/performance/caching.md) - 实施数据缓存的策略和技术，减少重复计算和数据访问的开销，提高系统响应速度和用户体验
+  - [❌] [负载平衡](./ops/performance/load-balancing.md) - 在多个系统资源间分配工作负载的技术，提高吞吐量和利用率，确保系统稳定和均衡运行
+  - [❌] [资源自动扩展](./ops/performance/auto-scaling.md) - 根据负载自动调整系统资源的机制，在保持性能的同时优化成本，应对业务波动和高峰期需求
+
+- 集成与连接
+  - [❌] [交易所连接](./ops/integration/exchange.md) - 与交易所系统的低延迟连接解决方案，提供可靠高效的交易指令传输，支持多种交易所和市场接入
+    - [❌] [专线连接选项](./ops/integration/exchange/dedicated-lines.md) - 通过专用网络线路连接交易所的选项，提供最低延迟和最高可靠性
+    - [❌] [托管接入服务](./ops/integration/exchange/co-location.md) - 在交易所数据中心托管系统的服务，最小化物理距离和传输延迟
+    - [❌] [连接监控系统](./ops/integration/exchange/monitoring.md) - 持续监控交易所连接状态和性能的工具，确保连接健康和及时发现问题
+    - [❌] [连接故障转移](./ops/integration/exchange/failover.md) - 在主要连接失败时自动切换到备用线路的机制，确保业务连续性
+  - [❌] [市场数据提供商](./ops/integration/market-data.md) - 与外部市场数据服务的集成方案，获取全面及时的市场信息，丰富交易决策和分析基础
+  - [❌] [内部系统连接](./ops/integration/internal.md) - 与企业内部其他系统的集成接口，实现数据和功能的无缝协作，提升整体业务流程效率
+    - [❌] [企业总线集成](./ops/integration/internal/esb.md) - 通过企业服务总线连接内部系统的架构，提供集中化的集成点
+    - [❌] [API网关连接](./ops/integration/internal/api-gateway.md) - 通过API网关实现系统间通信的解决方案，简化接口管理
+    - [❌] [数据同步机制](./ops/integration/internal/data-sync.md) - 确保跨系统数据一致性的同步机制，维护数据完整性
+    - [❌] [身份认证统一](./ops/integration/internal/sso.md) - 实现跨系统统一身份认证的方案，简化用户访问体验
+  - [❌] [客户系统连接](./ops/integration/client.md) - 与客户方系统的集成解决方案，实现订单路由和数据交换，支持客户化服务和业务拓展
+  - [❌] [VPN接入](./ops/integration/vpn.md) - 安全远程访问系统的VPN解决方案，保护敏感数据的同时提供灵活的访问方式，支持远程工作和管理
+  - [❌] [报告系统集成](./ops/integration/reporting.md) - 与企业报表和分析系统的集成方案，支持综合数据分析和决策支持，提升业务洞察能力
+
+- 安全部署
+  - [❌] [网络安全架构](./ops/security/network.md) - 保护系统免受网络威胁的安全架构设计，建立多层次防御体系，确保交易环境的完整性和保密性
+    - [❌] [分区与隔离](./ops/security/network/segmentation.md) - 通过网络分区和隔离限制攻击面和影响范围的架构，提高整体系统安全性
+    - [❌] [入侵检测系统](./ops/security/network/ids.md) - 检测和警告可疑网络活动的系统，及早发现潜在安全威胁
+    - [❌] [流量加密](./ops/security/network/encryption.md) - 加密系统组件间通信的机制，防止数据在传输过程中被窃取
+    - [❌] [安全访问控制](./ops/security/network/access-control.md) - 限制网络资源访问的控制措施，确保只有授权实体可以访问关键系统
+  - [❌] [身份管理基础设施](./ops/security/identity.md) - 管理用户身份和访问权限的安全框架，确保只有授权用户可以访问系统，防止未授权使用和信息泄露
+  - [❌] [加密与密钥管理](./ops/security/encryption.md) - 实施数据加密和安全密钥管理的方案，保护敏感数据安全，确保即使在数据外泄时仍能保持机密性
+    - [❌] [静态数据加密](./ops/security/encryption/at-rest.md) - 保护存储中数据安全的加密机制，防止未授权访问存储数据
+    - [❌] [密钥轮换机制](./ops/security/encryption/key-rotation.md) - 定期更新加密密钥的自动化流程，减少密钥泄露风险
+    - [❌] [硬件安全模块](./ops/security/encryption/hsm.md) - 使用专用硬件设备保护密钥材料的解决方案，提供最高级别的密钥安全
+    - [❌] [加密策略管理](./ops/security/encryption/policy.md) - 集中管理和执行数据加密策略的系统，确保加密实施的一致性
+  - [❌] [安全扫描与评估](./ops/security/scanning.md) - 自动检查系统安全漏洞的工具，主动识别和修复安全风险，降低系统受攻击的可能性
+  - [❌] [合规安全配置](./ops/security/compliance.md) - 根据行业监管标准配置系统安全的方案，确保满足合规要求，避免合规风险和法律责任
+  - [❌] [安全监控与响应](./ops/security/monitoring.md) - 持续监控安全事件和实施安全响应的系统，快速应对安全威胁，最小化安全事件的影响和损失 

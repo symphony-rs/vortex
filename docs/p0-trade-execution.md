@@ -1,0 +1,62 @@
+# 交易执行 - 提供全面的交易执行功能，确保高效、可靠的订单处理
+
+- 录入 - 支持多样化的订单类型和交易方式，满足不同交易策略需求
+  - [❌] [限价单](./trading/entry/limit.md) - 以指定价格或更优价格执行的订单类型，提供价格控制和执行确定性，降低成本风险
+  - [❌] [市价单](./trading/entry/market.md) - 以当前市场最优价格立即执行的订单类型，优先保证成交而非价格，适用于快速入市场景
+  - [❌] [止损单](./trading/entry/stop.md) - 当价格达到预设触发点自动执行的保护性订单，限制潜在损失，实现风险自动控制
+  - [❌] [冰山单](./trading/entry/iceberg.md) - 将大额订单分成多个小额订单逐步执行的策略，减少市场冲击，隐藏真实交易意图
+  - [❌] [算法单](./trading/entry/algo.md) - 基于预定义算法自动执行的复杂订单类型，优化执行质量和成本，提高大单执行效率
+  - [❌] [条件单](./trading/entry/conditional.md) - 仅在满足特定市场条件时才触发执行的订单，实现自动交易信号响应，无需人工监控
+  - [❌] [篮子订单](./trading/entry/basket.md) - 同时提交多个不同证券订单的功能，支持投资组合调整和多leg策略，简化复杂交易操作
+
+- 订单路由与执行 - 智能订单路由和执行管理，优化交易成本和效率
+  - [❌] [智能订单路由](./trading/routing/smart-order-routing.md) - 自动选择最佳执行场所的技术，优化价格、速度和成本，实现最优交易执行
+    - [❌] [多市场价格发现](./trading/routing/smart-order-routing/price-discovery.md) - 实时对比多个交易场所价格的机制，发现最优执行机会，捕捉价差收益
+    - [❌] [流动性评估](./trading/routing/smart-order-routing/liquidity.md) - 评估各市场流动性深度和稳定性的算法，预测市场冲击和滑点，避免流动性陷阱
+    - [❌] [执行成本预测](./trading/routing/smart-order-routing/cost-prediction.md) - 预估不同执行策略总成本的模型，包括显性和隐性成本，优化交易决策
+    - [❌] [最优路由策略](./trading/routing/smart-order-routing/optimal-strategy.md) - 基于多因素决策的路由算法，动态调整执行策略以适应市场条件，提高执行质量
+  - [❌] [自动化交易执行](./trading/routing/automated-execution.md) - 无需人工干预的全自动订单执行系统，支持策略驱动的交易，减少人为错误
+  - [❌] [最佳执行策略](./trading/routing/best-execution.md) - 确保获得最优交易条件的策略框架，满足监管和客户需求，最大化交易价值
+    - [❌] [价格优先策略](./trading/routing/best-execution/price-priority.md) - 以获取最优价格为主要目标的执行策略，适合对价格敏感的场景，最大化价格优势
+    - [❌] [成本优先策略](./trading/routing/best-execution/cost-priority.md) - 以最小化总交易成本为主要目标的执行策略，包括手续费、滑点和市场影响，提高净收益
+    - [❌] [速度优先策略](./trading/routing/best-execution/speed-priority.md) - 以最快速度完成交易为主要目标的执行策略，适合波动市场和时间敏感订单，降低时间风险
+    - [❌] [多目标优化](./trading/routing/best-execution/multi-objective.md) - 平衡价格、成本、速度和其他因素的综合优化策略，根据订单特性动态调整，实现综合最优
+  - [❌] [订单穿透路径分析](./trading/routing/order-path.md) - 追踪和分析订单从提交到执行的完整路径，发现延迟和优化机会，提高执行透明度
+  - [❌] [执行延迟分析](./trading/routing/latency.md) - 测量和分析交易执行链各环节延迟的工具，识别并解决性能瓶颈，优化关键路径
+  - [❌] [交易所连接器](./trading/routing/exchange-connectors.md) - 与各交易所交易接口的标准化连接组件，支持高效订单提交和管理，确保连接可靠性
+
+- 快速交易 - 为高频交易场景优化的快速交易功能，支持极速交易执行
+  - [❌] [一键交易](./core/trading/quick/one-click.md) - 通过单次点击快速执行预设交易的功能，适用于需要极速反应的场景
+  - [❌] [快捷键交易](./core/trading/quick/hotkeys.md) - 通过键盘快捷键执行常用交易操作的功能，提高专业交易员效率
+  - [❌] [鼠标手势](./core/trading/quick/gestures.md) - 通过预定义鼠标动作执行交易操作的功能，提供直观的交互方式
+  - [❌] [交易确认](./core/trading/quick/confirmation.md) - 快速交易前的简化确认机制，平衡速度和操作安全性
+  - [❌] [交易记忆](./core/trading/quick/memory.md) - 记住并自动填充常用交易参数的功能，减少重复输入提高效率
+
+- 批量操作 - 支持高效的批量交易操作，优化大规模交易管理
+  - [❌] [批量下单](./core/trading/bulk/orders.md) - 同时提交多个订单的工具，支持复杂交易组合和投资组合调整
+  - [❌] [批量撤单](./core/trading/bulk/cancellation.md) - 快速撤销多个未成交订单的功能，在市场快速变化时调整策略
+  - [❌] [批量修改](./core/trading/bulk/modification.md) - 同时修改多个活动订单参数的工具，高效调整交易策略
+  - [❌] [导入导出](./core/trading/bulk/import-export.md) - 通过文件批量导入订单和导出交易数据的功能，支持离线分析和批处理
+  - [❌] [预设模板](./core/trading/bulk/templates.md) - 创建和使用订单模板的功能，标准化常用交易操作提高效率
+
+- 算法交易 - 提供专业的算法交易功能，支持复杂交易策略执行
+  - 执行算法 - 实现各类专业交易执行算法，优化交易成本和效率，减少市场冲击
+    - [❌] [TWAP策略](./core/trading/algo/execution/twap.md) - 基于时间加权平均价格的执行算法，将大单分散在特定时间段内均匀执行
+    - [❌] [VWAP策略](./core/trading/algo/execution/vwap.md) - 基于成交量加权平均价格的执行算法，根据历史成交量分布执行订单
+    - [❌] [POV策略](./core/trading/algo/execution/pov.md) - 按市场成交量比例参与的执行算法，动态调整执行速度以跟随市场流动性
+    - [❌] [Sniper策略](./core/trading/algo/execution/sniper.md) - 等待并利用市场最优价格的执行算法，针对特定价位设置捕获条件
+    - [❌] [Iceberg策略](./core/trading/algo/execution/iceberg.md) - 通过显示部分订单量隐藏真实交易意图的执行算法，减少市场冲击
+    - [❌] [Adaptive策略](./core/trading/algo/execution/adaptive.md) - 根据市场状况动态调整执行参数的智能算法，平衡多种执行目标
+    - [❌] [Implementation Shortfall](./core/trading/algo/execution/implementation-shortfall.md) - 最小化执行成本与决策价格偏差的算法，适合大宗交易和机构投资者
+  - 算法框架 - 提供灵活的算法交易开发和管理框架，支持策略创新和持续优化
+    - [❌] [算法策略引擎](./core/trading/algo/framework/engine.md) - 支持交易算法开发、测试和部署的核心引擎，提供标准化接口和执行环境
+    - [❌] [参数配置系统](./core/trading/algo/framework/parameters.md) - 管理算法参数的系统，支持参数验证、存储和动态调整
+    - [❌] [策略监控与控制](./core/trading/algo/framework/monitoring.md) - 实时监控算法执行状态和性能的工具，支持手动干预和自动调整
+    - [❌] [算法性能评估](./core/trading/algo/framework/evaluation.md) - 评估算法执行质量和效果的框架，提供多维度绩效指标
+    - [❌] [自动调优系统](./core/trading/algo/framework/auto-tuning.md) - 基于历史表现和市场条件自动优化算法参数的系统，持续提升执行质量
+  - 自定义策略与回测 - 创建、测试和部署个性化交易策略的工具，满足特定交易需求和风格
+    - [❌] [策略编辑器](./core/trading/algo/custom/editor.md) - 用于开发和修改交易算法的集成开发环境，支持多种编程语言
+    - [❌] [参数配置](./core/trading/algo/custom/parameters.md) - 为自定义策略设置和管理参数的界面，支持参数范围检查和依赖关系
+    - [❌] [条件触发](./core/trading/algo/custom/triggers.md) - 定义策略激活条件的模块，支持价格、指标、时间等多种触发因素
+    - [❌] [策略脚本](./core/trading/algo/custom/scripts.md) - 基于脚本语言快速开发交易逻辑的功能，降低策略实现的技术门槛
+    - [❌] [策略回测](./core/trading/algo/backtest.md) - 使用历史数据验证交易策略效果的系统，模拟真实市场环境和交易执行
