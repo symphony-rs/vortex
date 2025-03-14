@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1000" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  <text x="500" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">做市商策略风险管理</text>
+  
+  <!-- 顶部状态栏 -->
+  <rect x="50" y="50" width="900" height="40" fill="#f1f3f4" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <circle cx="70" cy="70" r="6" fill="#4caf50"/>
+  <text x="90" y="75" font-family="Arial" font-size="14" font-weight="bold" fill="#4caf50">风险状态: 正常</text>
+  <text x="250" y="75" font-family="Arial" font-size="14">交易对: BTC/USDT</text>
+  <text x="420" y="75" font-family="Arial" font-size="14">交易所: Binance</text>
+  <text x="600" y="75" font-family="Arial" font-size="14">系统时间: 2023-08-25 14:32:45</text>
+  
+  <!-- 风险指标概览面板 -->
+  <rect x="50" y="110" width="440" height="220" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="70" y="135" font-family="Arial" font-size="16" font-weight="bold">风险指标概览</text>
+  
+  <!-- 风险指标表格 -->
+  <rect x="70" y="150" width="400" height="30" fill="#f1f3f4" stroke="#ddd" stroke-width="1"/>
+  <text x="85" y="170" font-family="Arial" font-size="12" font-weight="bold">风险指标</text>
+  <text x="230" y="170" font-family="Arial" font-size="12" font-weight="bold">当前值</text>
+  <text x="320" y="170" font-family="Arial" font-size="12" font-weight="bold">阈值</text>
+  <text x="390" y="170" font-family="Arial" font-size="12" font-weight="bold">状态</text>
+  
+  <!-- 指标1: 库存风险 -->
+  <rect x="70" y="180" width="400" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="85" y="200" font-family="Arial" font-size="12">库存偏离度</text>
+  <text x="230" y="200" font-family="Arial" font-size="12">+5.8%</text>
+  <text x="320" y="200" font-family="Arial" font-size="12">±10.0%</text>
+  <rect x="370" y="188" width="80" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="410" y="200" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">正常</text>
+  
+  <!-- 指标2: 盈亏风险 -->
+  <rect x="70" y="210" width="400" height="30" fill="#f9f9f9" stroke="#ddd" stroke-width="1"/>
+  <text x="85" y="230" font-family="Arial" font-size="12">日内浮动盈亏</text>
+  <text x="230" y="230" font-family="Arial" font-size="12">-2.3%</text>
+  <text x="320" y="230" font-family="Arial" font-size="12">-5.0%</text>
+  <rect x="370" y="218" width="80" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="410" y="230" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">正常</text>
+  
+  <!-- 指标3: 价差风险 -->
+  <rect x="70" y="240" width="400" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="85" y="260" font-family="Arial" font-size="12">买卖价差率</text>
+  <text x="230" y="260" font-family="Arial" font-size="12">0.12%</text>
+  <text x="320" y="260" font-family="Arial" font-size="12">0.15%</text>
+  <rect x="370" y="248" width="80" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="410" y="260" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">正常</text>
+  
+  <!-- 指标4: 交易频率 -->
+  <rect x="70" y="270" width="400" height="30" fill="#f9f9f9" stroke="#ddd" stroke-width="1"/>
+  <text x="85" y="290" font-family="Arial" font-size="12">交易频率异常</text>
+  <text x="230" y="290" font-family="Arial" font-size="12">1.2次/分钟</text>
+  <text x="320" y="290" font-family="Arial" font-size="12">2.0次/分钟</text>
+  <rect x="370" y="278" width="80" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="410" y="290" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">正常</text>
+  
+  <!-- 市场波动监控面板 -->
+  <rect x="510" y="110" width="440" height="220" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="530" y="135" font-family="Arial" font-size="16" font-weight="bold">市场波动监控</text>
+  
+  <!-- 波动率图表 -->
+  <rect x="530" y="150" width="400" height="160" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  
+  <!-- 波动率曲线 -->
+  <polyline points="530,270 550,260 570,265 590,240 610,230 630,245 650,255 670,220 690,210 710,200 730,230 750,240 770,220 790,210 810,195 830,205 850,220 870,190 890,210 910,205 930,225" 
+            fill="none" stroke="#ff7043" stroke-width="1.5"/>
+  
+  <!-- 平均波动率 -->
+  <line x1="530" y1="235" x2="930" y2="235" stroke="#90a4ae" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="930" y="235" font-family="Arial" font-size="10" fill="#90a4ae" text-anchor="end">平均值</text>
+  
+  <!-- 警戒线 -->
+  <line x1="530" y1="180" x2="930" y2="180" stroke="#ef5350" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="930" y="180" font-family="Arial" font-size="10" fill="#ef5350" text-anchor="end">警戒线</text>
+  
+  <!-- 异常峰值标记 -->
+  <circle cx="670" cy="220" r="4" fill="#ef5350"/>
+  <circle cx="690" cy="210" r="4" fill="#ef5350"/>
+  <circle cx="710" cy="200" r="4" fill="#ef5350"/>
+  <circle cx="870" cy="190" r="4" fill="#ef5350"/>
+  
+  <!-- 图例 -->
+  <rect x="530" y="320" width="12" height="2" stroke="#ff7043" stroke-width="1.5"/>
+  <text x="550" y="324" font-family="Arial" font-size="10">价格波动率</text>
+  
+  <rect x="630" y="320" width="12" height="2" stroke="#90a4ae" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="650" y="324" font-family="Arial" font-size="10">平均值</text>
+  
+  <rect x="730" y="320" width="12" height="2" stroke="#ef5350" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="750" y="324" font-family="Arial" font-size="10">警戒线</text>
+  
+  <circle cx="830" cy="320" r="4" fill="#ef5350"/>
+  <text x="850" y="324" font-family="Arial" font-size="10">异常峰值</text>
+  
+  <!-- 风险干预机制面板 -->
+  <rect x="50" y="350" width="440" height="230" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="70" y="375" font-family="Arial" font-size="16" font-weight="bold">风险干预机制</text>
+  
+  <!-- 风险等级指示器 -->
+  <rect x="70" y="390" width="400" height="35" fill="#f1f3f4" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="85" y="413" font-family="Arial" font-size="14">当前风险等级:</text>
+  
+  <!-- 风险等级 -->
+  <rect x="210" y="395" width="60" height="25" fill="#e8f5e9" rx="4" ry="4"/>
+  <text x="240" y="413" text-anchor="middle" font-family="Arial" font-size="14" fill="#388e3c">低</text>
+  
+  <rect x="280" y="395" width="60" height="25" fill="#fff9c4" rx="4" ry="4" fill-opacity="0.4"/>
+  <text x="310" y="413" text-anchor="middle" font-family="Arial" font-size="14" fill="#9e9d24" fill-opacity="0.4">中</text>
+  
+  <rect x="350" y="395" width="60" height="25" fill="#ffebee" rx="4" ry="4" fill-opacity="0.4"/>
+  <text x="380" y="413" text-anchor="middle" font-family="Arial" font-size="14" fill="#c62828" fill-opacity="0.4">高</text>
+  
+  <!-- 干预措施列表 -->
+  <text x="70" y="445" font-family="Arial" font-size="14" font-weight="bold">自动干预措施:</text>
+  
+  <!-- 措施1 -->
+  <rect x="70" y="455" width="20" height="20" fill="#e8f5e9" rx="3" ry="3"/>
+  <text x="80" y="469" text-anchor="middle" font-family="Arial" font-size="12" fill="#388e3c">✓</text>
+  <text x="100" y="469" font-family="Arial" font-size="12">调整买卖价差 (当前: 0.12% → 目标: 0.12%)</text>
+  
+  <!-- 措施2 -->
+  <rect x="70" y="485" width="20" height="20" fill="#f5f5f5" stroke="#ddd" stroke-width="1" rx="3" ry="3"/>
+  <text x="100" y="499" font-family="Arial" font-size="12">减少订单数量 (当前: 100% → 目标: 100%)</text>
+  
+  <!-- 措施3 -->
+  <rect x="70" y="515" width="20" height="20" fill="#f5f5f5" stroke="#ddd" stroke-width="1" rx="3" ry="3"/>
+  <text x="100" y="529" font-family="Arial" font-size="12">暂停新开仓订单 (当前: 启用 → 目标: 启用)</text>
+  
+  <!-- 措施4 -->
+  <rect x="70" y="545" width="20" height="20" fill="#f5f5f5" stroke="#ddd" stroke-width="1" rx="3" ry="3"/>
+  <text x="100" y="559" font-family="Arial" font-size="12">全部撤单并退出市场 (当前: 启用 → 目标: 启用)</text>
+  
+  <!-- 风险报警记录面板 -->
+  <rect x="510" y="350" width="440" height="230" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="530" y="375" font-family="Arial" font-size="16" font-weight="bold">风险报警记录</text>
+  
+  <!-- 报警记录表格 -->
+  <rect x="530" y="390" width="400" height="30" fill="#f1f3f4" stroke="#ddd" stroke-width="1"/>
+  <text x="545" y="410" font-family="Arial" font-size="12" font-weight="bold">时间</text>
+  <text x="650" y="410" font-family="Arial" font-size="12" font-weight="bold">风险类型</text>
+  <text x="780" y="410" font-family="Arial" font-size="12" font-weight="bold">风险级别</text>
+  <text x="865" y="410" font-family="Arial" font-size="12" font-weight="bold">状态</text>
+  
+  <!-- 记录1 -->
+  <rect x="530" y="420" width="400" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="545" y="440" font-family="Arial" font-size="12">14:15:22</text>
+  <text x="650" y="440" font-family="Arial" font-size="12">价格异常波动</text>
+  <rect x="770" y="428" width="40" height="14" fill="#fff9c4" rx="7" ry="7"/>
+  <text x="790" y="440" text-anchor="middle" font-family="Arial" font-size="10" fill="#9e9d24">中</text>
+  <rect x="850" y="428" width="60" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="880" y="440" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">已处理</text>
+  
+  <!-- 记录2 -->
+  <rect x="530" y="450" width="400" height="30" fill="#f9f9f9" stroke="#ddd" stroke-width="1"/>
+  <text x="545" y="470" font-family="Arial" font-size="12">13:45:38</text>
+  <text x="650" y="470" font-family="Arial" font-size="12">库存不平衡</text>
+  <rect x="770" y="458" width="40" height="14" fill="#ffebee" rx="7" ry="7"/>
+  <text x="790" y="470" text-anchor="middle" font-family="Arial" font-size="10" fill="#c62828">高</text>
+  <rect x="850" y="458" width="60" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="880" y="470" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">已处理</text>
+  
+  <!-- 记录3 -->
+  <rect x="530" y="480" width="400" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="545" y="500" font-family="Arial" font-size="12">12:22:15</text>
+  <text x="650" y="500" font-family="Arial" font-size="12">交易频率过高</text>
+  <rect x="770" y="488" width="40" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="790" y="500" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">低</text>
+  <rect x="850" y="488" width="60" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="880" y="500" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">已处理</text>
+  
+  <!-- 记录4 -->
+  <rect x="530" y="510" width="400" height="30" fill="#f9f9f9" stroke="#ddd" stroke-width="1"/>
+  <text x="545" y="530" font-family="Arial" font-size="12">10:08:52</text>
+  <text x="650" y="530" font-family="Arial" font-size="12">盈亏异常波动</text>
+  <rect x="770" y="518" width="40" height="14" fill="#fff9c4" rx="7" ry="7"/>
+  <text x="790" y="530" text-anchor="middle" font-family="Arial" font-size="10" fill="#9e9d24">中</text>
+  <rect x="850" y="518" width="60" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="880" y="530" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">已处理</text>
+  
+  <!-- 记录5 -->
+  <rect x="530" y="540" width="400" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="545" y="560" font-family="Arial" font-size="12">09:15:30</text>
+  <text x="650" y="560" font-family="Arial" font-size="12">市场流动性不足</text>
+  <rect x="770" y="548" width="40" height="14" fill="#ffebee" rx="7" ry="7"/>
+  <text x="790" y="560" text-anchor="middle" font-family="Arial" font-size="10" fill="#c62828">高</text>
+  <rect x="850" y="548" width="60" height="14" fill="#e8f5e9" rx="7" ry="7"/>
+  <text x="880" y="560" text-anchor="middle" font-family="Arial" font-size="10" fill="#388e3c">已处理</text>
+</svg>

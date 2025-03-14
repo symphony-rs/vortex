@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1000" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  <text x="500" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">做市商策略监控面板</text>
+  
+  <!-- 顶部状态栏 -->
+  <rect x="50" y="50" width="900" height="40" fill="#f1f3f4" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <circle cx="70" cy="70" r="6" fill="#4caf50"/>
+  <text x="90" y="75" font-family="Arial" font-size="14" font-weight="bold" fill="#4caf50">策略状态: 运行中</text>
+  <text x="250" y="75" font-family="Arial" font-size="14">交易对: BTC/USDT</text>
+  <text x="420" y="75" font-family="Arial" font-size="14">交易所: Binance</text>
+  <text x="600" y="75" font-family="Arial" font-size="14">运行时间: 5小时32分钟</text>
+  <text x="800" y="75" font-family="Arial" font-size="14">刷新间隔: 2秒</text>
+  
+  <!-- 策略状态概览面板 -->
+  <rect x="50" y="110" width="290" height="170" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="70" y="135" font-family="Arial" font-size="16" font-weight="bold">策略状态概览</text>
+  
+  <!-- 当前盈亏 -->
+  <text x="70" y="165" font-family="Arial" font-size="14">当前盈亏:</text>
+  <text x="240" y="165" font-family="Arial" font-size="14" font-weight="bold" fill="#4caf50" text-anchor="end">+35.68 USDT</text>
+  
+  <!-- 总交易次数 -->
+  <text x="70" y="195" font-family="Arial" font-size="14">总交易次数:</text>
+  <text x="240" y="195" font-family="Arial" font-size="14" font-weight="bold" text-anchor="end">248</text>
+  
+  <!-- 成功率 -->
+  <text x="70" y="225" font-family="Arial" font-size="14">成功率:</text>
+  <text x="240" y="225" font-family="Arial" font-size="14" font-weight="bold" fill="#4caf50" text-anchor="end">94.8%</text>
+  
+  <!-- 日均交易量 -->
+  <text x="70" y="255" font-family="Arial" font-size="14">日均交易量:</text>
+  <text x="240" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="end">2.85 BTC</text>
+  
+  <!-- 库存管理面板 -->
+  <rect x="360" y="110" width="290" height="170" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="380" y="135" font-family="Arial" font-size="16" font-weight="bold">库存管理</text>
+  
+  <!-- 当前净持仓 -->
+  <text x="380" y="165" font-family="Arial" font-size="14">当前净持仓:</text>
+  <text x="550" y="165" font-family="Arial" font-size="14" font-weight="bold" text-anchor="end">+0.058 BTC</text>
+  
+  <!-- 持仓成本 -->
+  <text x="380" y="195" font-family="Arial" font-size="14">持仓成本:</text>
+  <text x="550" y="195" font-family="Arial" font-size="14" font-weight="bold" text-anchor="end">27,421.35 USDT</text>
+  
+  <!-- 持仓市值 -->
+  <text x="380" y="225" font-family="Arial" font-size="14">持仓市值:</text>
+  <text x="550" y="225" font-family="Arial" font-size="14" font-weight="bold" text-anchor="end">1,590.45 USDT</text>
+  
+  <!-- 库存不平衡指标 -->
+  <text x="380" y="255" font-family="Arial" font-size="14">库存不平衡指标:</text>
+  <rect x="520" y="245" width="100" height="15" fill="#f1f1f1" stroke="#ddd" stroke-width="1" rx="2" ry="2"/>
+  <rect x="520" y="245" width="58" height="15" fill="#e8f5e9" rx="2 0 0 2" ry="2 0 0 2"/>
+  
+  <!-- 实时盈亏面板 -->
+  <rect x="670" y="110" width="280" height="170" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="690" y="135" font-family="Arial" font-size="16" font-weight="bold">实时盈亏统计</text>
+  
+  <!-- 盈亏图表 -->
+  <rect x="690" y="145" width="240" height="110" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <polyline points="690,230 710,220 730,225 750,215 770,210 790,205 810,195 830,190 850,180 870,175 890,170 910,165 930,160" 
+           fill="none" stroke="#4caf50" stroke-width="1.5"/>
+  
+  <!-- 图表标记线 -->
+  <line x1="690" y1="230" x2="930" y2="230" stroke="#ddd" stroke-width="1"/>
+  <text x="810" y="255" text-anchor="middle" font-family="Arial" font-size="10">时间 (最近6小时)</text>
+  
+  <!-- 挂单可视化面板 -->
+  <rect x="50" y="300" width="450" height="280" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="70" y="325" font-family="Arial" font-size="16" font-weight="bold">挂单可视化</text>
+  
+  <!-- 订单簿深度可视化 -->
+  <rect x="70" y="340" width="410" height="220" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  
+  <!-- 中心价格线 -->
+  <line x1="275" y1="340" x2="275" y2="560" stroke="#90a4ae" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="275" y="335" text-anchor="middle" font-family="Arial" font-size="11">当前价格: 27,435.50</text>
+  
+  <!-- 买卖盘深度图 -->
+  <!-- 卖盘深度 -->
+  <path d="M 275,450 L 315,440 L 355,425 L 395,410 L 435,390 L 475,340 L 475,450 Z" fill="#ffcdd2" fill-opacity="0.5" stroke="#f44336" stroke-width="1"/>
+  
+  <!-- 买盘深度 -->
+  <path d="M 275,450 L 235,440 L 195,430 L 155,415 L 115,400 L 75,370 L 75,450 Z" fill="#c8e6c9" fill-opacity="0.5" stroke="#4caf50" stroke-width="1"/>
+  
+  <!-- 当前挂单标记 -->
+  <rect x="230" y="440" width="10" height="10" fill="#4caf50" stroke="#388e3c" stroke-width="1.5" rx="2" ry="2"/>
+  <rect x="320" y="440" width="10" height="10" fill="#f44336" stroke="#d32f2f" stroke-width="1.5" rx="2" ry="2"/>
+  
+  <!-- 历史成交点标记 -->
+  <circle cx="240" cy="430" r="3" fill="#4caf50"/>
+  <circle cx="260" cy="435" r="3" fill="#4caf50"/>
+  <circle cx="290" cy="435" r="3" fill="#f44336"/>
+  <circle cx="310" cy="430" r="3" fill="#f44336"/>
+  
+  <!-- X轴 -->
+  <line x1="70" y1="450" x2="480" y2="450" stroke="#666" stroke-width="1"/>
+  
+  <!-- 价格标签 -->
+  <text x="120" y="470" text-anchor="middle" font-family="Arial" font-size="10">27,432</text>
+  <text x="170" y="470" text-anchor="middle" font-family="Arial" font-size="10">27,433</text>
+  <text x="220" y="470" text-anchor="middle" font-family="Arial" font-size="10">27,434</text>
+  <text x="275" y="470" text-anchor="middle" font-family="Arial" font-size="10">27,435</text>
+  <text x="330" y="470" text-anchor="middle" font-family="Arial" font-size="10">27,436</text>
+  <text x="380" y="470" text-anchor="middle" font-family="Arial" font-size="10">27,437</text>
+  <text x="430" y="470" text-anchor="middle" font-family="Arial" font-size="10">27,438</text>
+  
+  <!-- 图例 -->
+  <rect x="380" y="500" width="12" height="12" fill="#c8e6c9" fill-opacity="0.5" stroke="#4caf50" stroke-width="1"/>
+  <text x="400" y="510" font-family="Arial" font-size="10">买单深度</text>
+  
+  <rect x="380" y="520" width="12" height="12" fill="#ffcdd2" fill-opacity="0.5" stroke="#f44336" stroke-width="1"/>
+  <text x="400" y="530" font-family="Arial" font-size="10">卖单深度</text>
+  
+  <rect x="380" y="540" width="12" height="12" fill="#4caf50" stroke="#388e3c" stroke-width="1.5" rx="2" ry="2"/>
+  <text x="400" y="550" font-family="Arial" font-size="10">当前买单</text>
+  
+  <!-- 交易详情面板 -->
+  <rect x="520" y="300" width="430" height="280" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="540" y="325" font-family="Arial" font-size="16" font-weight="bold">交易详情</text>
+  
+  <!-- 切换标签 -->
+  <rect x="540" y="340" width="100" height="30" fill="#1976d2" stroke="#1565c0" stroke-width="1" rx="5" ry="5"/>
+  <text x="590" y="360" text-anchor="middle" font-family="Arial" font-size="14" fill="white">活跃订单</text>
+  
+  <rect x="645" y="340" width="100" height="30" fill="#f1f3f4" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="695" y="360" text-anchor="middle" font-family="Arial" font-size="14">历史成交</text>
+  
+  <rect x="750" y="340" width="100" height="30" fill="#f1f3f4" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="800" y="360" text-anchor="middle" font-family="Arial" font-size="14">盈亏分析</text>
+  
+  <!-- 订单表格 -->
+  <rect x="540" y="380" width="390" height="30" fill="#f1f3f4" stroke="#ddd" stroke-width="1"/>
+  <text x="555" y="400" font-family="Arial" font-size="12" font-weight="bold">订单ID</text>
+  <text x="635" y="400" font-family="Arial" font-size="12" font-weight="bold">方向</text>
+  <text x="695" y="400" font-family="Arial" font-size="12" font-weight="bold">价格</text>
+  <text x="765" y="400" font-family="Arial" font-size="12" font-weight="bold">数量</text>
+  <text x="825" y="400" font-family="Arial" font-size="12" font-weight="bold">状态</text>
+  <text x="890" y="400" font-family="Arial" font-size="12" font-weight="bold">更新时间</text>
+  
+  <!-- 订单1 -->
+  <rect x="540" y="410" width="390" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="555" y="430" font-family="Arial" font-size="12">MM-102385</text>
+  <text x="635" y="430" font-family="Arial" font-size="12" fill="#4caf50">买入</text>
+  <text x="695" y="430" font-family="Arial" font-size="12">27,434.20</text>
+  <text x="765" y="430" font-family="Arial" font-size="12">0.15</text>
+  <text x="825" y="430" font-family="Arial" font-size="12">活跃</text>
+  <text x="890" y="430" font-family="Arial" font-size="12">10:15:34</text>
+  
+  <!-- 订单2 -->
+  <rect x="540" y="440" width="390" height="30" fill="#f9f9f9" stroke="#ddd" stroke-width="1"/>
+  <text x="555" y="460" font-family="Arial" font-size="12">MM-102386</text>
+  <text x="635" y="460" font-family="Arial" font-size="12" fill="#f44336">卖出</text>
+  <text x="695" y="460" font-family="Arial" font-size="12">27,436.80</text>
+  <text x="765" y="460" font-family="Arial" font-size="12">0.12</text>
+  <text x="825" y="460" font-family="Arial" font-size="12">活跃</text>
+  <text x="890" y="460" font-family="Arial" font-size="12">10:15:34</text>
+  
+  <!-- 订单3 -->
+  <rect x="540" y="470" width="390" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="555" y="490" font-family="Arial" font-size="12">MM-102372</text>
+  <text x="635" y="490" font-family="Arial" font-size="12" fill="#4caf50">买入</text>
+  <text x="695" y="490" font-family="Arial" font-size="12">27,433.50</text>
+  <text x="765" y="490" font-family="Arial" font-size="12">0.10</text>
+  <text x="825" y="490" font-family="Arial" font-size="12">部分成交</text>
+  <text x="890" y="490" font-family="Arial" font-size="12">10:14:22</text>
+  
+  <!-- 订单4 -->
+  <rect x="540" y="500" width="390" height="30" fill="#f9f9f9" stroke="#ddd" stroke-width="1"/>
+  <text x="555" y="520" font-family="Arial" font-size="12">MM-102373</text>
+  <text x="635" y="520" font-family="Arial" font-size="12" fill="#f44336">卖出</text>
+  <text x="695" y="520" font-family="Arial" font-size="12">27,437.50</text>
+  <text x="765" y="520" font-family="Arial" font-size="12">0.18</text>
+  <text x="825" y="520" font-family="Arial" font-size="12">部分成交</text>
+  <text x="890" y="520" font-family="Arial" font-size="12">10:14:22</text>
+  
+  <!-- 订单5 -->
+  <rect x="540" y="530" width="390" height="30" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="555" y="550" font-family="Arial" font-size="12">MM-102365</text>
+  <text x="635" y="550" font-family="Arial" font-size="12" fill="#4caf50">买入</text>
+  <text x="695" y="550" font-family="Arial" font-size="12">27,432.80</text>
+  <text x="765" y="550" font-family="Arial" font-size="12">0.05</text>
+  <text x="825" y="550" font-family="Arial" font-size="12">活跃</text>
+  <text x="890" y="550" font-family="Arial" font-size="12">10:12:56</text>
+</svg> 

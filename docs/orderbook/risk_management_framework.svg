@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">盘口策略风险管理框架</text>
+  
+  <!-- 中心风险管理框架 -->
+  <rect x="250" y="100" width="300" height="80" fill="#b39ddb" rx="5" ry="5" stroke="#673ab7" stroke-width="2"/>
+  <text x="400" y="145" font-family="Arial" font-size="18" text-anchor="middle" fill="#311b92">订单簿策略风险管理</text>
+  
+  <!-- 四大风险控制模块 -->
+  <!-- 模块1: 订单控制 -->
+  <rect x="80" y="230" width="250" height="160" fill="#fff" rx="5" ry="5" stroke="#7e57c2" stroke-width="1.5"/>
+  <rect x="80" y="230" width="250" height="40" fill="#d1c4e9" rx="5" ry="5"/>
+  <text x="205" y="255" font-family="Arial" font-size="16" text-anchor="middle" fill="#4527a0">订单控制系统</text>
+  
+  <!-- 模块2: 流动性监控 -->
+  <rect x="470" y="230" width="250" height="160" fill="#fff" rx="5" ry="5" stroke="#42a5f5" stroke-width="1.5"/>
+  <rect x="470" y="230" width="250" height="40" fill="#bbdefb" rx="5" ry="5"/>
+  <text x="595" y="255" font-family="Arial" font-size="16" text-anchor="middle" fill="#0d47a1">流动性监控</text>
+  
+  <!-- 模块3: 库存管理 -->
+  <rect x="80" y="420" width="250" height="160" fill="#fff" rx="5" ry="5" stroke="#66bb6a" stroke-width="1.5"/>
+  <rect x="80" y="420" width="250" height="40" fill="#c8e6c9" rx="5" ry="5"/>
+  <text x="205" y="445" font-family="Arial" font-size="16" text-anchor="middle" fill="#2e7d32">库存管理</text>
+  
+  <!-- 模块4: 盈亏监控 -->
+  <rect x="470" y="420" width="250" height="160" fill="#fff" rx="5" ry="5" stroke="#ffb74d" stroke-width="1.5"/>
+  <rect x="470" y="420" width="250" height="40" fill="#ffe0b2" rx="5" ry="5"/>
+  <text x="595" y="445" font-family="Arial" font-size="16" text-anchor="middle" fill="#e65100">盈亏监控</text>
+  
+  <!-- 连接线 -->
+  <line x1="400" y1="180" x2="205" y2="230" stroke="#673ab7" stroke-width="1.5"/>
+  <line x1="400" y1="180" x2="595" y2="230" stroke="#673ab7" stroke-width="1.5"/>
+  <line x1="205" y1="390" x2="205" y2="420" stroke="#673ab7" stroke-width="1.5"/>
+  <line x1="595" y1="390" x2="595" y2="420" stroke="#673ab7" stroke-width="1.5"/>
+  
+  <!-- 模块内容 - 订单控制 -->
+  <circle cx="100" cy="290" r="6" fill="#7e57c2"/>
+  <text x="115" y="295" font-family="Arial" font-size="14" text-anchor="start">单笔成交比例限制 (5-10%)</text>
+  
+  <circle cx="100" cy="320" r="6" fill="#7e57c2"/>
+  <text x="115" y="325" font-family="Arial" font-size="14" text-anchor="start">自动拆单机制</text>
+  
+  <circle cx="100" cy="350" r="6" fill="#7e57c2"/>
+  <text x="115" y="355" font-family="Arial" font-size="14" text-anchor="start">撤单频率控制</text>
+  
+  <circle cx="100" cy="380" r="6" fill="#7e57c2"/>
+  <text x="115" y="385" font-family="Arial" font-size="14" text-anchor="start">紧急一键撤单功能</text>
+  
+  <!-- 模块内容 - 流动性监控 -->
+  <circle cx="490" cy="290" r="6" fill="#42a5f5"/>
+  <text x="505" y="295" font-family="Arial" font-size="14" text-anchor="start">盘口深度实时监测</text>
+  
+  <circle cx="490" cy="320" r="6" fill="#42a5f5"/>
+  <text x="505" y="325" font-family="Arial" font-size="14" text-anchor="start">成交量异常预警</text>
+  
+  <circle cx="490" cy="350" r="6" fill="#42a5f5"/>
+  <text x="505" y="355" font-family="Arial" font-size="14" text-anchor="start">价差变化监控</text>
+  
+  <circle cx="490" cy="380" r="6" fill="#42a5f5"/>
+  <text x="505" y="385" font-family="Arial" font-size="14" text-anchor="start">极端行情流动性枯竭预警</text>
+  
+  <!-- 模块内容 - 库存管理 -->
+  <circle cx="100" cy="480" r="6" fill="#66bb6a"/>
+  <text x="115" y="485" font-family="Arial" font-size="14" text-anchor="start">持仓上限设置</text>
+  
+  <circle cx="100" cy="510" r="6" fill="#66bb6a"/>
+  <text x="115" y="515" font-family="Arial" font-size="14" text-anchor="start">库存中性机制</text>
+  
+  <circle cx="100" cy="540" r="6" fill="#66bb6a"/>
+  <text x="115" y="545" font-family="Arial" font-size="14" text-anchor="start">自动对冲功能</text>
+  
+  <circle cx="100" cy="570" r="6" fill="#66bb6a"/>
+  <text x="115" y="575" font-family="Arial" font-size="14" text-anchor="start">单边持仓时间限制</text>
+  
+  <!-- 模块内容 - 盈亏监控 -->
+  <circle cx="490" cy="480" r="6" fill="#ffb74d"/>
+  <text x="505" y="485" font-family="Arial" font-size="14" text-anchor="start">实时盈亏计算</text>
+  
+  <circle cx="490" cy="510" r="6" fill="#ffb74d"/>
+  <text x="505" y="515" font-family="Arial" font-size="14" text-anchor="start">日亏损上限（最大回撤限制）</text>
+  
+  <circle cx="490" cy="540" r="6" fill="#ffb74d"/>
+  <text x="505" y="545" font-family="Arial" font-size="14" text-anchor="start">策略盈亏平衡点监控</text>
+  
+  <circle cx="490" cy="570" r="6" fill="#ffb74d"/>
+  <text x="505" y="575" font-family="Arial" font-size="14" text-anchor="start">滑点成本分析</text>
+  
+  <!-- 边框连接装饰 -->
+  <line x1="80" y1="310" x2="65" y2="310" stroke="#7e57c2" stroke-width="2"/>
+  <line x1="65" y1="310" x2="65" y2="500" stroke="#7e57c2" stroke-width="2"/>
+  <line x1="65" y1="500" x2="80" y2="500" stroke="#7e57c2" stroke-width="2"/>
+  
+  <line x1="735" y1="310" x2="750" y2="310" stroke="#42a5f5" stroke-width="2"/>
+  <line x1="750" y1="310" x2="750" y2="500" stroke="#42a5f5" stroke-width="2"/>
+  <line x1="750" y1="500" x2="735" y2="500" stroke="#42a5f5" stroke-width="2"/>
+  
+  <!-- 风险提示 -->
+  <text x="400" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#d32f2f">预防市场冲击、逆向选择和极端行情风险</text>
+</svg> 

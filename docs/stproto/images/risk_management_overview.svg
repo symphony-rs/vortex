@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">风险管理架构概览</text>
+  
+  <!-- 核心区域 - 风险管理中心 -->
+  <rect x="300" y="220" width="200" height="100" fill="#f8d7da" stroke="#dc3545" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="260" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">风险管理核心</text>
+  <text x="400" y="290" text-anchor="middle" font-family="Arial" font-size="14">中央风险控制引擎</text>
+  
+  <!-- 第一层 - 策略级风险控制 -->
+  <rect x="140" y="100" width="180" height="80" fill="#e2f0d9" stroke="#4ca64c" stroke-width="2" rx="5" ry="5"/>
+  <text x="230" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">策略级风险控制</text>
+  <text x="230" y="155" text-anchor="middle" font-family="Arial" font-size="12">策略参数监控与优化</text>
+  
+  <!-- 第二层 - 交易级风险控制 -->
+  <rect x="480" y="100" width="180" height="80" fill="#d9e2f0" stroke="#4c6ca6" stroke-width="2" rx="5" ry="5"/>
+  <text x="570" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">交易级风险控制</text>
+  <text x="570" y="155" text-anchor="middle" font-family="Arial" font-size="12">订单执行风险管理</text>
+  
+  <!-- 第三层 - 账户级风险控制 -->
+  <rect x="140" y="360" width="180" height="80" fill="#f0e6d9" stroke="#a67c4c" stroke-width="2" rx="5" ry="5"/>
+  <text x="230" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">账户级风险控制</text>
+  <text x="230" y="415" text-anchor="middle" font-family="Arial" font-size="12">资金与仓位管理</text>
+  
+  <!-- 第四层 - 系统级风险控制 -->
+  <rect x="480" y="360" width="180" height="80" fill="#e7d9f0" stroke="#6e4ca6" stroke-width="2" rx="5" ry="5"/>
+  <text x="570" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">系统级风险控制</text>
+  <text x="570" y="415" text-anchor="middle" font-family="Arial" font-size="12">系统稳定性与故障恢复</text>
+  
+  <!-- 底层 - 风险数据仓库 -->
+  <rect x="250" y="480" width="300" height="60" fill="#daeaf1" stroke="#2196f3" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="515" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">风险数据仓库与分析系统</text>
+  
+  <!-- 外部系统 -->
+  <rect x="50" y="230" width="140" height="80" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="5" ry="5"/>
+  <text x="120" y="260" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">交易策略</text>
+  <text x="120" y="280" text-anchor="middle" font-family="Arial" font-size="12">盘口交易执行</text>
+  
+  <rect x="610" y="230" width="140" height="80" fill="#d1ecf1" stroke="#17a2b8" stroke-width="2" rx="5" ry="5"/>
+  <text x="680" y="260" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">市场接口</text>
+  <text x="680" y="280" text-anchor="middle" font-family="Arial" font-size="12">交易所连接与执行</text>
+  
+  <!-- 连接线 -->
+  <!-- 策略级到核心 -->
+  <line x1="230" y1="180" x2="350" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 交易级到核心 -->
+  <line x1="570" y1="180" x2="450" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 核心到账户级 -->
+  <line x1="350" y1="320" x2="230" y2="360" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 核心到系统级 -->
+  <line x1="450" y1="320" x2="570" y2="360" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 账户级到数据仓库 -->
+  <line x1="230" y1="440" x2="350" y2="480" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 系统级到数据仓库 -->
+  <line x1="570" y1="440" x2="450" y2="480" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 交易策略到核心 -->
+  <line x1="190" y1="270" x2="300" y2="270" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 核心到市场接口 -->
+  <line x1="500" y1="270" x2="610" y2="270" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 策略模块详情 -->
+  <rect x="60" y="140" width="20" height="20" fill="#e2f0d9" stroke="#4ca64c" stroke-width="1"/>
+  <text x="90" y="155" font-family="Arial" font-size="11">参数合理性检查</text>
+  
+  <rect x="60" y="165" width="20" height="20" fill="#e2f0d9" stroke="#4ca64c" stroke-width="1"/>
+  <text x="90" y="180" font-family="Arial" font-size="11">策略性能监控</text>
+  
+  <!-- 交易模块详情 -->
+  <rect x="690" y="140" width="20" height="20" fill="#d9e2f0" stroke="#4c6ca6" stroke-width="1"/>
+  <text x="720" y="155" font-family="Arial" font-size="11">订单大小控制</text>
+  
+  <rect x="690" y="165" width="20" height="20" fill="#d9e2f0" stroke="#4c6ca6" stroke-width="1"/>
+  <text x="720" y="180" font-family="Arial" font-size="11">价格偏离检查</text>
+  
+  <!-- 账户模块详情 -->
+  <rect x="60" y="400" width="20" height="20" fill="#f0e6d9" stroke="#a67c4c" stroke-width="1"/>
+  <text x="90" y="415" font-family="Arial" font-size="11">仓位限制管理</text>
+  
+  <rect x="60" y="425" width="20" height="20" fill="#f0e6d9" stroke="#a67c4c" stroke-width="1"/>
+  <text x="90" y="440" font-family="Arial" font-size="11">资金利用率控制</text>
+  
+  <!-- 系统模块详情 -->
+  <rect x="690" y="400" width="20" height="20" fill="#e7d9f0" stroke="#6e4ca6" stroke-width="1"/>
+  <text x="720" y="415" font-family="Arial" font-size="11">连接状态监控</text>
+  
+  <rect x="690" y="425" width="20" height="20" fill="#e7d9f0" stroke="#6e4ca6" stroke-width="1"/>
+  <text x="720" y="440" font-family="Arial" font-size="11">系统负载管理</text>
+</svg>

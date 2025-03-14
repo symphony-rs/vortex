@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="550" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="550" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">做市商策略 (Market Making)</text>
+  
+  <!-- 中心价格区域 -->
+  <rect x="150" y="80" width="500" height="300" fill="#fff" rx="5" ry="5" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- 订单簿展示 -->
+  <!-- 表格标题 -->
+  <text x="250" y="110" font-family="Arial" font-size="16" text-anchor="middle">买单区域 (Bid)</text>
+  <text x="550" y="110" font-family="Arial" font-size="16" text-anchor="middle">卖单区域 (Ask)</text>
+  
+  <!-- 表头 -->
+  <rect x="200" y="120" width="100" height="30" fill="#a5d6a7" rx="3" ry="3"/>
+  <rect x="300" y="120" width="100" height="30" fill="#a5d6a7" rx="3" ry="3"/>
+  <text x="250" y="140" font-family="Arial" font-size="14" text-anchor="middle">价格</text>
+  <text x="350" y="140" font-family="Arial" font-size="14" text-anchor="middle">数量</text>
+  
+  <rect x="400" y="120" width="100" height="30" fill="#ef9a9a" rx="3" ry="3"/>
+  <rect x="500" y="120" width="100" height="30" fill="#ef9a9a" rx="3" ry="3"/>
+  <text x="450" y="140" font-family="Arial" font-size="14" text-anchor="middle">价格</text>
+  <text x="550" y="140" font-family="Arial" font-size="14" text-anchor="middle">数量</text>
+  
+  <!-- 买单数据行 -->
+  <rect x="200" y="150" width="100" height="25" fill="#c8e6c9" rx="3" ry="3"/>
+  <rect x="300" y="150" width="100" height="25" fill="#c8e6c9" rx="3" ry="3"/>
+  <rect x="200" y="175" width="100" height="25" fill="white" rx="3" ry="3"/>
+  <rect x="300" y="175" width="100" height="25" fill="white" rx="3" ry="3"/>
+  <rect x="200" y="200" width="100" height="25" fill="#c8e6c9" rx="3" ry="3"/>
+  <rect x="300" y="200" width="100" height="25" fill="#c8e6c9" rx="3" ry="3"/>
+  <rect x="200" y="225" width="100" height="25" fill="white" rx="3" ry="3"/>
+  <rect x="300" y="225" width="100" height="25" fill="white" rx="3" ry="3"/>
+  
+  <!-- 买单数据 -->
+  <text x="250" y="167" font-family="Arial" font-size="14" text-anchor="middle">40,000</text>
+  <text x="350" y="167" font-family="Arial" font-size="14" text-anchor="middle">3.2</text>
+  <text x="250" y="192" font-family="Arial" font-size="14" text-anchor="middle">39,995</text>
+  <text x="350" y="192" font-family="Arial" font-size="14" text-anchor="middle">7.1</text>
+  <text x="250" y="217" font-family="Arial" font-size="14" text-anchor="middle">39,990</text>
+  <text x="350" y="217" font-family="Arial" font-size="14" text-anchor="middle">12.5</text>
+  <text x="250" y="242" font-family="Arial" font-size="14" text-anchor="middle">39,985</text>
+  <text x="350" y="242" font-family="Arial" font-size="14" text-anchor="middle">18.3</text>
+  
+  <!-- 卖单数据行 -->
+  <rect x="400" y="150" width="100" height="25" fill="#ffcdd2" rx="3" ry="3"/>
+  <rect x="500" y="150" width="100" height="25" fill="#ffcdd2" rx="3" ry="3"/>
+  <rect x="400" y="175" width="100" height="25" fill="white" rx="3" ry="3"/>
+  <rect x="500" y="175" width="100" height="25" fill="white" rx="3" ry="3"/>
+  <rect x="400" y="200" width="100" height="25" fill="#ffcdd2" rx="3" ry="3"/>
+  <rect x="500" y="200" width="100" height="25" fill="#ffcdd2" rx="3" ry="3"/>
+  <rect x="400" y="225" width="100" height="25" fill="white" rx="3" ry="3"/>
+  <rect x="500" y="225" width="100" height="25" fill="white" rx="3" ry="3"/>
+  
+  <!-- 卖单数据 -->
+  <text x="450" y="167" font-family="Arial" font-size="14" text-anchor="middle">40,005</text>
+  <text x="550" y="167" font-family="Arial" font-size="14" text-anchor="middle">2.5</text>
+  <text x="450" y="192" font-family="Arial" font-size="14" text-anchor="middle">40,010</text>
+  <text x="550" y="192" font-family="Arial" font-size="14" text-anchor="middle">5.8</text>
+  <text x="450" y="217" font-family="Arial" font-size="14" text-anchor="middle">40,015</text>
+  <text x="550" y="217" font-family="Arial" font-size="14" text-anchor="middle">10.2</text>
+  <text x="450" y="242" font-family="Arial" font-size="14" text-anchor="middle">40,020</text>
+  <text x="550" y="242" font-family="Arial" font-size="14" text-anchor="middle">15.7</text>
+  
+  <!-- 做市商策略图示 -->
+  <!-- 价差区域 -->
+  <rect x="200" y="270" width="400" height="60" fill="#e3f2fd" rx="3" ry="3" stroke="#90caf9" stroke-width="1"/>
+  <text x="400" y="290" font-family="Arial" font-size="16" text-anchor="middle">价差区域 (Spread Zone)</text>
+  <text x="400" y="315" font-family="Arial" font-size="14" text-anchor="middle">价差 = 5 (0.0125%)</text>
+  
+  <!-- 做市商订单 -->
+  <rect x="175" y="168" width="25" height="25" fill="#ffd54f" rx="3" ry="3" stroke="#ffa000" stroke-width="2"/>
+  <text x="187" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">M</text>
+  
+  <rect x="600" y="168" width="25" height="25" fill="#ffd54f" rx="3" ry="3" stroke="#ffa000" stroke-width="2"/>
+  <text x="612" y="185" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">M</text>
+  
+  <!-- 箭头和标注 -->
+  <line x1="175" y1="180" x2="110" y2="180" stroke="#ffa000" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="110" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffa000">做市商买单</text>
+  <text x="110" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffa000">价格: 39,998</text>
+  <text x="110" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffa000">数量: 1.5</text>
+  
+  <line x1="625" y1="180" x2="690" y2="180" stroke="#ffa000" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="690" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffa000">做市商卖单</text>
+  <text x="690" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffa000">价格: 40,002</text>
+  <text x="690" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffa000">数量: 1.2</text>
+  
+  <!-- 策略说明 -->
+  <rect x="100" y="350" width="600" height="160" fill="#fff" rx="5" ry="5" stroke="#ccc" stroke-width="1"/>
+  <text x="400" y="375" font-family="Arial" font-size="18" text-anchor="middle">做市商策略关键点</text>
+  
+  <!-- 策略要点 -->
+  <circle cx="120" y="405" r="6" fill="#ffa000"/>
+  <text x="135" y="410" font-family="Arial" font-size="14" text-anchor="start">在买一和卖一价格之间挂单，同时在买卖两方参与交易</text>
+  
+  <circle cx="120" y="435" r="6" fill="#ffa000"/>
+  <text x="135" y="440" font-family="Arial" font-size="14" text-anchor="start">盈利来源于买卖价差，即以较低价格买入，较高价格卖出</text>
+  
+  <circle cx="120" y="465" r="6" fill="#ffa000"/>
+  <text x="135" y="470" font-family="Arial" font-size="14" text-anchor="start">动态调整报价：根据市场波动率和订单簿深度调整挂单价格</text>
+  
+  <circle cx="120" y="495" r="6" fill="#ffa000"/>
+  <text x="135" y="500" font-family="Arial" font-size="14" text-anchor="start">库存管理：控制持仓风险，避免因单边行情导致库存过度累积</text>
+  
+  <!-- 底部注释 -->
+  <text x="400" y="530" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">做市商在买卖盘之间创造流动性，同时通过赚取价差获利</text>
+</svg> 

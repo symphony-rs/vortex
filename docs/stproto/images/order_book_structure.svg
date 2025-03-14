@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">订单簿数据结构原型</text>
+  
+  <!-- 顶部价格信息 -->
+  <rect x="50" y="60" width="700" height="40" fill="#f1f3f4" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="100" y="85" font-family="Arial" font-size="16">BTC/USDT</text>
+  <text x="240" y="85" font-family="Arial" font-size="16" font-weight="bold">27,435.68</text>
+  <text x="370" y="85" font-family="Arial" font-size="14" fill="#f44336">-1.24%</text>
+  <text x="600" y="85" font-family="Arial" font-size="14">聚合单位: 0.1</text>
+  
+  <!-- 主视图区域 - 订单簿 -->
+  <rect x="50" y="120" width="700" height="400" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  
+  <!-- 列标题 -->
+  <rect x="50" y="120" width="700" height="30" fill="#f1f3f4" stroke="#ddd" stroke-width="1"/>
+  <text x="140" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">累计(BTC)</text>
+  <text x="240" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">数量(BTC)</text>
+  <text x="340" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">买入价格(USDT)</text>
+  <text x="460" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">卖出价格(USDT)</text>
+  <text x="560" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">数量(BTC)</text>
+  <text x="660" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">累计(BTC)</text>
+  
+  <!-- 中间分隔线 -->
+  <line x1="400" y1="150" x2="400" y2="520" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 卖单区域 (Ask) -->
+  <g fill="#ffebee">
+    <rect x="400" y="150" width="350" height="25" fill="#fff5f5"/>
+    <rect x="400" y="175" width="350" height="25" fill="#fff1f0"/>
+    <rect x="400" y="200" width="350" height="25" fill="#ffedeb"/>
+    <rect x="400" y="225" width="350" height="25" fill="#ffe9e6"/>
+    <rect x="400" y="250" width="350" height="25" fill="#ffe5e1"/>
+    <rect x="400" y="275" width="350" height="25" fill="#ffe0dc"/>
+    <rect x="400" y="300" width="350" height="25" fill="#ffdcd7"/>
+    <rect x="400" y="325" width="350" height="25" fill="#ffd8d2"/>
+  </g>
+  
+  <!-- 卖单价格 -->
+  <g font-family="Arial" font-size="12" fill="#f44336" text-anchor="middle">
+    <text x="460" y="167">27,436.5</text>
+    <text x="460" y="192">27,437.2</text>
+    <text x="460" y="217">27,438.0</text>
+    <text x="460" y="242">27,438.8</text>
+    <text x="460" y="267">27,439.5</text>
+    <text x="460" y="292">27,440.3</text>
+    <text x="460" y="317">27,441.2</text>
+    <text x="460" y="342">27,442.0</text>
+  </g>
+  
+  <!-- 卖单数量 -->
+  <g font-family="Arial" font-size="12" text-anchor="middle">
+    <text x="560" y="167">0.256</text>
+    <text x="560" y="192">0.345</text>
+    <text x="560" y="217">0.189</text>
+    <text x="560" y="242">0.532</text>
+    <text x="560" y="267">0.278</text>
+    <text x="560" y="292">0.476</text>
+    <text x="560" y="317">0.321</text>
+    <text x="560" y="342">0.654</text>
+  </g>
+  
+  <!-- 卖单累计量 -->
+  <g font-family="Arial" font-size="12" text-anchor="middle">
+    <text x="660" y="167">0.256</text>
+    <text x="660" y="192">0.601</text>
+    <text x="660" y="217">0.790</text>
+    <text x="660" y="242">1.322</text>
+    <text x="660" y="267">1.600</text>
+    <text x="660" y="292">2.076</text>
+    <text x="660" y="317">2.397</text>
+    <text x="660" y="342">3.051</text>
+  </g>
+  
+  <!-- 买单区域 (Bid) -->
+  <g fill="#e8f5e9">
+    <rect x="50" y="150" width="350" height="25" fill="#f2fbf3"/>
+    <rect x="50" y="175" width="350" height="25" fill="#edf9ef"/>
+    <rect x="50" y="200" width="350" height="25" fill="#e8f7eb"/>
+    <rect x="50" y="225" width="350" height="25" fill="#e3f5e7"/>
+    <rect x="50" y="250" width="350" height="25" fill="#def3e3"/>
+    <rect x="50" y="275" width="350" height="25" fill="#d9f1df"/>
+    <rect x="50" y="300" width="350" height="25" fill="#d4efdb"/>
+    <rect x="50" y="325" width="350" height="25" fill="#cfecd7"/>
+  </g>
+  
+  <!-- 买单价格 -->
+  <g font-family="Arial" font-size="12" fill="#4caf50" text-anchor="middle">
+    <text x="340" y="167">27,435.6</text>
+    <text x="340" y="192">27,434.9</text>
+    <text x="340" y="217">27,434.1</text>
+    <text x="340" y="242">27,433.2</text>
+    <text x="340" y="267">27,432.5</text>
+    <text x="340" y="292">27,431.8</text>
+    <text x="340" y="317">27,431.0</text>
+    <text x="340" y="342">27,430.2</text>
+  </g>
+  
+  <!-- 买单数量 -->
+  <g font-family="Arial" font-size="12" text-anchor="middle">
+    <text x="240" y="167">0.387</text>
+    <text x="240" y="192">0.298</text>
+    <text x="240" y="217">0.465</text>
+    <text x="240" y="242">0.225</text>
+    <text x="240" y="267">0.721</text>
+    <text x="240" y="292">0.354</text>
+    <text x="240" y="317">0.490</text>
+    <text x="240" y="342">0.278</text>
+  </g>
+  
+  <!-- 买单累计量 -->
+  <g font-family="Arial" font-size="12" text-anchor="middle">
+    <text x="140" y="167">0.387</text>
+    <text x="140" y="192">0.685</text>
+    <text x="140" y="217">1.150</text>
+    <text x="140" y="242">1.375</text>
+    <text x="140" y="267">2.096</text>
+    <text x="140" y="292">2.450</text>
+    <text x="140" y="317">2.940</text>
+    <text x="140" y="342">3.218</text>
+  </g>
+
+  <!-- 中央价格点突出显示 -->
+  <rect x="50" y="150" width="700" height="25" fill="none" stroke="#bbb" stroke-width="2"/>
+  
+  <!-- 当前点差 -->
+  <rect x="350" y="120" width="100" height="30" fill="#e3f2fd" stroke="#ddd" stroke-width="1"/>
+  <text x="400" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">点差: 0.9</text>
+  
+  <!-- 深度可视化区域 -->
+  <rect x="50" y="370" width="700" height="150" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  <text x="400" y="390" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">深度可视化</text>
+  
+  <!-- 买单深度 -->
+  <path d="M 50,500 L 50,450 L 120,460 L 190,465 L 260,475 L 330,485 L 400,500 Z" fill="#4caf50" fill-opacity="0.3" stroke="#4caf50" stroke-width="1"/>
+  
+  <!-- 卖单深度 -->
+  <path d="M 400,500 L 470,485 L 540,475 L 610,465 L 680,455 L 750,445 L 750,500 Z" fill="#f44336" fill-opacity="0.3" stroke="#f44336" stroke-width="1"/>
+  
+  <!-- X轴 -->
+  <line x1="50" y1="500" x2="750" y2="500" stroke="#666" stroke-width="1"/>
+  
+  <!-- 标签 -->
+  <text x="200" y="520" text-anchor="middle" font-family="Arial" font-size="12">买单深度</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial" font-size="12">卖单深度</text>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="12">当前价格</text>
+  
+  <!-- 实时订单流 -->
+  <rect x="50" y="540" width="700" height="40" fill="#f5f5f5" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">实时订单流</text>
+  
+  <!-- 订单流条目 -->
+  <g transform="translate(65, 565)">
+    <circle cx="0" cy="0" r="5" fill="#4caf50"/>
+    <text x="15" y="3" font-family="Arial" font-size="10">买入 0.123 @ 27,435.6</text>
+  </g>
+  
+  <g transform="translate(215, 565)">
+    <circle cx="0" cy="0" r="5" fill="#f44336"/>
+    <text x="15" y="3" font-family="Arial" font-size="10">卖出 0.085 @ 27,436.5</text>
+  </g>
+  
+  <g transform="translate(365, 565)">
+    <circle cx="0" cy="0" r="5" fill="#9e9e9e"/>
+    <text x="15" y="3" font-family="Arial" font-size="10">撤单 0.352 @ 27,432.5</text>
+  </g>
+  
+  <g transform="translate(515, 565)">
+    <circle cx="0" cy="0" r="5" fill="#4caf50"/>
+    <text x="15" y="3" font-family="Arial" font-size="10">买入 0.217 @ 27,435.2</text>
+  </g>
+  
+  <g transform="translate(665, 565)">
+    <circle cx="0" cy="0" r="5" fill="#f44336"/>
+    <text x="15" y="3" font-family="Arial" font-size="10">卖出 0.175 @ 27,437.2</text>
+  </g>
+</svg> 

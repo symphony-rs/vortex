@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">订单簿不平衡策略 (Order Book Imbalance)</text>
+  
+  <!-- 不平衡指标可视化区域 -->
+  <rect x="50" y="70" width="700" height="200" fill="#fff" rx="5" ry="5" stroke="#ccc" stroke-width="1"/>
+  <text x="400" y="95" font-family="Arial" font-size="18" text-anchor="middle">订单簿不平衡指标</text>
+  
+  <!-- 坐标轴 -->
+  <line x1="100" y1="220" x2="700" y2="220" stroke="#333" stroke-width="2"/>
+  <line x1="400" y1="120" x2="400" y2="220" stroke="#333" stroke-width="2"/>
+  
+  <!-- X轴标签 -->
+  <text x="400" y="240" font-family="Arial" font-size="14" text-anchor="middle">价格水平</text>
+  <text x="100" y="240" font-family="Arial" font-size="12" text-anchor="middle">39,950</text>
+  <text x="250" y="240" font-family="Arial" font-size="12" text-anchor="middle">39,975</text>
+  <text x="400" y="240" font-family="Arial" font-size="12" text-anchor="middle">40,000</text>
+  <text x="550" y="240" font-family="Arial" font-size="12" text-anchor="middle">40,025</text>
+  <text x="700" y="240" font-family="Arial" font-size="12" text-anchor="middle">40,050</text>
+  
+  <!-- 买单方向柱状图 -->
+  <rect x="100" y="180" width="60" height="40" fill="#4caf50" rx="2" ry="2"/>
+  <rect x="175" y="165" width="60" height="55" fill="#4caf50" rx="2" ry="2"/>
+  <rect x="250" y="145" width="60" height="75" fill="#4caf50" rx="2" ry="2"/>
+  <rect x="325" y="130" width="60" height="90" fill="#4caf50" rx="2" ry="2"/>
+  
+  <!-- 卖单方向柱状图 -->
+  <rect x="415" y="190" width="60" height="30" fill="#f44336" rx="2" ry="2"/>
+  <rect x="490" y="180" width="60" height="40" fill="#f44336" rx="2" ry="2"/>
+  <rect x="565" y="170" width="60" height="50" fill="#f44336" rx="2" ry="2"/>
+  <rect x="640" y="160" width="60" height="60" fill="#f44336" rx="2" ry="2"/>
+  
+  <!-- 中心价格线 -->
+  <line x1="400" y1="120" x2="400" y2="220" stroke="#03a9f4" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="#03a9f4">当前价格: 40,000</text>
+  
+  <!-- 不平衡区域标注 -->
+  <text x="250" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#4caf50">买单累计量: 350</text>
+  <text x="550" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#f44336">卖单累计量: 180</text>
+  
+  <text x="400" y="260" font-family="Arial" font-size="14" text-anchor="middle" fill="#03a9f4">不平衡比率: 1.94 (买方压力)</text>
+  
+  <!-- 不平衡时序图 -->
+  <rect x="50" y="290" width="700" height="170" fill="#fff" rx="5" ry="5" stroke="#ccc" stroke-width="1"/>
+  <text x="400" y="315" font-family="Arial" font-size="18" text-anchor="middle">不平衡指标时序变化</text>
+  
+  <!-- 时序图坐标轴 -->
+  <line x1="100" y1="410" x2="700" y2="410" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="340" x2="100" y2="410" stroke="#333" stroke-width="2"/>
+  
+  <!-- X轴标签（时间） -->
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle">时间 (ms)</text>
+  <text x="100" y="430" font-family="Arial" font-size="12" text-anchor="middle">0</text>
+  <text x="220" y="430" font-family="Arial" font-size="12" text-anchor="middle">100</text>
+  <text x="340" y="430" font-family="Arial" font-size="12" text-anchor="middle">200</text>
+  <text x="460" y="430" font-family="Arial" font-size="12" text-anchor="middle">300</text>
+  <text x="580" y="430" font-family="Arial" font-size="12" text-anchor="middle">400</text>
+  <text x="700" y="430" font-family="Arial" font-size="12" text-anchor="middle">500</text>
+  
+  <!-- Y轴标签（不平衡比率） -->
+  <text x="80" y="370" font-family="Arial" font-size="12" text-anchor="end" transform="rotate(-90, 60, 370)">不平衡比率</text>
+  <text x="90" y="410" font-family="Arial" font-size="10" text-anchor="end">1.0</text>
+  <text x="90" y="375" font-family="Arial" font-size="10" text-anchor="end">1.5</text>
+  <text x="90" y="340" font-family="Arial" font-size="10" text-anchor="end">2.0</text>
+  
+  <!-- 不平衡比率曲线 -->
+  <path d="M 100,390 L 160,385 L 220,380 L 280,365 L 340,350 L 400,340 L 460,345 L 520,350 L 580,370 L 640,380 L 700,390" fill="none" stroke="#9c27b0" stroke-width="2"/>
+  
+  <!-- 阈值线 -->
+  <line x1="100" y1="360" x2="700" y2="360" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="110" y="355" font-family="Arial" font-size="10" text-anchor="start" fill="#ff9800">阈值线 (1.7)</text>
+  
+  <!-- 交易信号标记 -->
+  <circle cx="340" cy="350" r="5" fill="#03a9f4"/>
+  <circle cx="400" cy="340" r="5" fill="#03a9f4"/>
+  <line x1="370" y1="345" x2="370" y2="450" stroke="#03a9f4" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="370" y="445" font-family="Arial" font-size="12" text-anchor="middle" fill="#03a9f4">交易信号触发</text>
+  
+  <!-- 策略执行说明 -->
+  <rect x="50" y="480" width="700" height="100" fill="#e8eaf6" rx="5" ry="5" stroke="#3f51b5" stroke-width="1"/>
+  <text x="400" y="500" font-family="Arial" font-size="16" text-anchor="middle" fill="#3f51b5">策略执行逻辑</text>
+  
+  <line x1="100" y1="520" x2="650" y2="520" stroke="#ccc" stroke-width="1"/>
+  
+  <text x="80" y="540" font-family="Arial" font-size="14" text-anchor="middle">观察</text>
+  <text x="250" y="540" font-family="Arial" font-size="14" text-anchor="start">买单量远大于卖单量 (比率 > 1.7)</text>
+  
+  <text x="80" y="565" font-family="Arial" font-size="14" text-anchor="middle">预测</text>
+  <text x="250" y="565" font-family="Arial" font-size="14" text-anchor="start">短期内价格可能上涨</text>
+  
+  <text x="500" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#4caf50">执行操作</text>
+  <text x="580" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#4caf50">买入做多</text>
+  
+  <text x="500" y="565" font-family="Arial" font-size="14" text-anchor="middle" fill="#f44336">风险控制</text>
+  <text x="580" y="565" font-family="Arial" font-size="14" text-anchor="middle" fill="#f44336">设止损位</text>
+</svg> 

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">冰山订单探测策略 (Iceberg Detection)</text>
+  
+  <!-- 冰山订单概念图 -->
+  <rect x="50" y="70" width="700" height="240" fill="#fff" rx="5" ry="5" stroke="#ccc" stroke-width="1"/>
+  <text x="400" y="95" font-family="Arial" font-size="18" text-anchor="middle">冰山订单可视化</text>
+  
+  <!-- 背景网格 -->
+  <line x1="100" y1="120" x2="100" y2="270" stroke="#eee" stroke-width="1"/>
+  <line x1="200" y1="120" x2="200" y2="270" stroke="#eee" stroke-width="1"/>
+  <line x1="300" y1="120" x2="300" y2="270" stroke="#eee" stroke-width="1"/>
+  <line x1="400" y1="120" x2="400" y2="270" stroke="#eee" stroke-width="1"/>
+  <line x1="500" y1="120" x2="500" y2="270" stroke="#eee" stroke-width="1"/>
+  <line x1="600" y1="120" x2="600" y2="270" stroke="#eee" stroke-width="1"/>
+  <line x1="700" y1="120" x2="700" y2="270" stroke="#eee" stroke-width="1"/>
+  
+  <line x1="100" y1="120" x2="700" y2="120" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="150" x2="700" y2="150" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="180" x2="700" y2="180" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="210" x2="700" y2="210" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="240" x2="700" y2="240" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="270" x2="700" y2="270" stroke="#eee" stroke-width="1"/>
+  
+  <!-- 坐标轴 -->
+  <line x1="100" y1="270" x2="700" y2="270" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="120" x2="100" y2="270" stroke="#333" stroke-width="2"/>
+  
+  <!-- X轴标签 -->
+  <text x="400" y="290" font-family="Arial" font-size="14" text-anchor="middle">时间序列</text>
+  <text x="100" y="290" font-family="Arial" font-size="12" text-anchor="middle">0</text>
+  <text x="200" y="290" font-family="Arial" font-size="12" text-anchor="middle">1</text>
+  <text x="300" y="290" font-family="Arial" font-size="12" text-anchor="middle">2</text>
+  <text x="400" y="290" font-family="Arial" font-size="12" text-anchor="middle">3</text>
+  <text x="500" y="290" font-family="Arial" font-size="12" text-anchor="middle">4</text>
+  <text x="600" y="290" font-family="Arial" font-size="12" text-anchor="middle">5</text>
+  <text x="700" y="290" font-family="Arial" font-size="12" text-anchor="middle">6</text>
+  
+  <!-- Y轴标签 -->
+  <text x="60" y="195" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 60, 195)">订单量</text>
+  <text x="90" y="270" font-family="Arial" font-size="12" text-anchor="end">0</text>
+  <text x="90" y="240" font-family="Arial" font-size="12" text-anchor="end">10</text>
+  <text x="90" y="210" font-family="Arial" font-size="12" text-anchor="end">20</text>
+  <text x="90" y="180" font-family="Arial" font-size="12" text-anchor="end">30</text>
+  <text x="90" y="150" font-family="Arial" font-size="12" text-anchor="end">40</text>
+  <text x="90" y="120" font-family="Arial" font-size="12" text-anchor="end">50</text>
+  
+  <!-- 冰山订单展示 - 可见部分 -->
+  <rect x="115" y="250" width="70" height="20" fill="#90caf9" rx="2" ry="2"/>
+  <rect x="215" y="250" width="70" height="20" fill="#90caf9" rx="2" ry="2"/>
+  <rect x="315" y="250" width="70" height="20" fill="#90caf9" rx="2" ry="2"/>
+  <rect x="415" y="250" width="70" height="20" fill="#90caf9" rx="2" ry="2"/>
+  <rect x="515" y="250" width="70" height="20" fill="#90caf9" rx="2" ry="2"/>
+  <rect x="615" y="250" width="70" height="20" fill="#90caf9" rx="2" ry="2"/>
+  
+  <!-- 标记显示的订单量 -->
+  <text x="150" y="264" font-family="Arial" font-size="12" text-anchor="middle">5</text>
+  <text x="250" y="264" font-family="Arial" font-size="12" text-anchor="middle">5</text>
+  <text x="350" y="264" font-family="Arial" font-size="12" text-anchor="middle">5</text>
+  <text x="450" y="264" font-family="Arial" font-size="12" text-anchor="middle">5</text>
+  <text x="550" y="264" font-family="Arial" font-size="12" text-anchor="middle">5</text>
+  <text x="650" y="264" font-family="Arial" font-size="12" text-anchor="middle">5</text>
+  
+  <!-- 冰山订单展示 - 隐藏部分 -->
+  <rect x="115" y="210" width="70" height="40" fill="#bbdefb" fill-opacity="0.6" rx="2" ry="2" stroke="#1e88e5" stroke-width="1" stroke-dasharray="5,3"/>
+  <rect x="215" y="180" width="70" height="70" fill="#bbdefb" fill-opacity="0.6" rx="2" ry="2" stroke="#1e88e5" stroke-width="1" stroke-dasharray="5,3"/>
+  <rect x="315" y="160" width="70" height="90" fill="#bbdefb" fill-opacity="0.6" rx="2" ry="2" stroke="#1e88e5" stroke-width="1" stroke-dasharray="5,3"/>
+  <rect x="415" y="145" width="70" height="105" fill="#bbdefb" fill-opacity="0.6" rx="2" ry="2" stroke="#1e88e5" stroke-width="1" stroke-dasharray="5,3"/>
+  <rect x="515" y="170" width="70" height="80" fill="#bbdefb" fill-opacity="0.6" rx="2" ry="2" stroke="#1e88e5" stroke-width="1" stroke-dasharray="5,3"/>
+  <rect x="615" y="200" width="70" height="50" fill="#bbdefb" fill-opacity="0.6" rx="2" ry="2" stroke="#1e88e5" stroke-width="1" stroke-dasharray="5,3"/>
+  
+  <!-- 标记真实总订单量 -->
+  <text x="150" y="230" font-family="Arial" font-size="12" text-anchor="middle">15</text>
+  <text x="250" y="215" font-family="Arial" font-size="12" text-anchor="middle">25</text>
+  <text x="350" y="205" font-family="Arial" font-size="12" text-anchor="middle">35</text>
+  <text x="450" y="190" font-family="Arial" font-size="12" text-anchor="middle">40</text>
+  <text x="550" y="210" font-family="Arial" font-size="12" text-anchor="middle">30</text>
+  <text x="650" y="225" font-family="Arial" font-size="12" text-anchor="middle">20</text>
+  
+  <!-- 冰山效应标注 -->
+  <text x="400" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">大型订单隐藏部分 (冰山效应)</text>
+  <line x1="400" y1="145" x2="400" y2="170" stroke="#0d47a1" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <text x="400" y="245" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976d2">市场可见部分 (固定显示量)</text>
+  <line x1="400" y1="250" x2="400" y2="240" stroke="#1976d2" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 探测策略图 -->
+  <rect x="50" y="320" width="700" height="290" fill="#fff" rx="5" ry="5" stroke="#ccc" stroke-width="1"/>
+  <text x="400" y="345" font-family="Arial" font-size="18" text-anchor="middle">冰山订单探测技术</text>
+  
+  <!-- 模式识别部分 -->
+  <rect x="80" y="370" width="320" height="150" fill="#e8f5e9" rx="3" ry="3" stroke="#388e3c" stroke-width="1"/>
+  <text x="240" y="390" font-family="Arial" font-size="16" text-anchor="middle" fill="#1b5e20">订单流模式识别</text>
+  
+  <line x1="100" y1="400" x2="380" y2="400" stroke="#ccc" stroke-width="1"/>
+  
+  <text x="110" y="420" font-family="Arial" font-size="14" text-anchor="start">1. 寻找重复出现的固定数量挂单/撤单模式</text>
+  <text x="110" y="445" font-family="Arial" font-size="14" text-anchor="start">2. 同一价位上反复出现相同数量的订单</text>
+  <text x="110" y="470" font-family="Arial" font-size="14" text-anchor="start">3. 订单成交后迅速出现相同大小的新订单</text>
+  <text x="110" y="495" font-family="Arial" font-size="14" text-anchor="start">4. 观察时间模式（例如：每隔10ms刷新一次）</text>
+  
+  <!-- 机器学习部分 -->
+  <rect x="420" y="370" width="320" height="150" fill="#f3e5f5" rx="3" ry="3" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="580" y="390" font-family="Arial" font-size="16" text-anchor="middle" fill="#4a148c">机器学习检测</text>
+  
+  <line x1="440" y1="400" x2="720" y2="400" stroke="#ccc" stroke-width="1"/>
+  
+  <text x="450" y="420" font-family="Arial" font-size="14" text-anchor="start">1. 使用历史冰山订单数据训练检测模型</text>
+  <text x="450" y="445" font-family="Arial" font-size="14" text-anchor="start">2. 特征工程：订单流速率、量变化、规律性</text>
+  <text x="450" y="470" font-family="Arial" font-size="14" text-anchor="start">3. 实时异常检测算法识别不寻常订单流</text>
+  <text x="450" y="495" font-family="Arial" font-size="14" text-anchor="start">4. 长短期记忆网络(LSTM)或随机森林模型</text>
+  
+  <!-- 策略执行 -->
+  <rect x="80" y="540" width="660" height="50" fill="#e3f2fd" rx="3" ry="3" stroke="#1565c0" stroke-width="1"/>
+  <text x="410" y="570" font-family="Arial" font-size="14" text-anchor="middle">策略执行: 当检测到冰山订单时，顺势操作 - 大买单冰山提前买入，大卖单冰山提前卖出</text>
+  
+  <!-- 底部注释 -->
+  <text x="400" y="610" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">冰山订单探测策略可以识别市场中隐藏的大单，提前预判价格走势</text>
+  <text x="400" y="630" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">必须注意假阳性信号和正常市场波动带来的干扰</text>
+</svg> 
